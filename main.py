@@ -11,7 +11,3 @@ PII_FIELDS = __import__('filtered_logger').PII_FIELDS
 print(get_logger.__annotations__.get('return'))
 print("PII_FIELDS: {}".format(len(PII_FIELDS)))
 
-bob@dylan:~$
-bob@dylan:~$ ./main.py
-<class 'logging.Logger'>
-PII_FIELDS: 5
