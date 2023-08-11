@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Route module for the API
 """
@@ -16,7 +15,7 @@ CORS(app, resources={r"/api/v1/*": {"origins": "*"}})
 
 
 @app.errorhandler(404)
-def unauthorized(error):
+def not_found(error):
     return jsonify({"error": "Unauthorized"}), 404
 
 
